@@ -7,10 +7,10 @@ import MainPage from "@/pages/MainPage.vue";
 
 <template>
   <TheHeader />
-  <RouterView />
+
   <MainPage />
   <TheFooter />
-
+  <RouterView />
 </template>
 
 <style scoped>

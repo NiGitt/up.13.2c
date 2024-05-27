@@ -6,41 +6,48 @@
     <div class="header">
       <div class="warface">
         <img src="../assets/images/warface.png" alt="#">
-        <p>WARFACE</p>
+        <h1>WARFACE</h1>
       </div>
-      <div class="button_head">
-      <button >Войти</button>
-      <button >Регистрация</button>
-    </div>
+        <div class="p">
+          <p>Войти</p>
+          <p>Регистрация</p>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .warface{
-  padding-top: 2em;
-  padding-bottom: 2em;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  cursor: pointer;
 }
+
+
 .header{
-  background-image: url("../assets/images/1.jpg" ) ;
+  background-image: url("../assets/images/warface (2).png" );
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
   width: 100%;
-  background-size:100% 250%;
+  background-size:100% 100%;
   background-repeat: no-repeat;
+  padding: 1.5em;
 }
-.header p{
+.header h1{
   color: white;
+  font-size: 16px;
+  padding: 1.5em;
 }
-.button_head{
-  height: 20px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  outline: none;
-  cursor: pointer;
+.p{
   display: flex;
-  align-items: end;
-
+  color: white;
+  font-size: 16px;
+  height: 20px;
+  padding: 1em;
+  cursor: pointer;
+}
+p:last-child{
+  margin-left: 3em;
 }
 </style>
